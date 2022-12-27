@@ -1,0 +1,43 @@
+{
+  "name": "kyoko.js",
+  "version": "1.0.0",
+  "description": "A javascript wrapper for KyokoAPI (kyoko.rei.my.id)",
+  "main": "./src/index.js",
+  "type": "module",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliottophellia/kyoko.js.git"
+  },
+  "keywords": [
+    "anime-api",
+    "anime-quotes",
+    "anime-images",
+    "anime-nsfw",
+    "waifu-generator",
+    "wrapper",
+    "waifu"
+  ],
+  "funding": [
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/elliottophellia"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/elliottophellia"
+    }
+  ],
+  "author": "elliottophellia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elliottophellia/kyoko.js/issues"
+  },
+  "homepage": "https://github.com/elliottophellia/kyoko.js#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
