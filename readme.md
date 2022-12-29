@@ -2,7 +2,7 @@
 <img src="https://i.ibb.co/ydWTXyD/kyoko.png" width="160"/><br/>
 <b>歳納京子</b><br/>
 Toshino Kyoko<br/>
-<img src="https://img.shields.io/badge/NODE-JS-bf616a?style=flat-square"/> <img src="https://img.shields.io/badge/LICENE-MIT-ebcb8b?style=flat-square"/> <img src="https://img.shields.io/badge/VERSION-1.0.0-a3be8c?style=flat-square"/><br/>
+<img src="https://img.shields.io/badge/NODE-JS-bf616a?style=flat-square"/> <img src="https://img.shields.io/badge/LICENE-MIT-ebcb8b?style=flat-square"/> <img src="https://img.shields.io/badge/VERSION-1.0.1-a3be8c?style=flat-square"/><br/>
 A JavaScript Wrapper For KyokoAPI<br/>
 <u><i>https://kyoko.rei.my.id</i></u>
 <br/>
@@ -23,27 +23,31 @@ npm i kyoko.js
 import { Kyoko } from 'kyoko.js';
 const kyoko = new Kyoko();
 
+// Sfw
 kyoko.getWaifu(5)
 .then(res => console.log(res))
 .catch(err => console.log(err));
-  
+// Nsfw
+kyoko.getNsfwWaifu(5)
+.then(res => console.log(res))
+.catch(err => console.log(err));
+// Quotes
+kyoko.getQuote(5)
+.then(res => console.log(res))
+.catch(err => console.log(err));
+// MyAnimeList
+kyoko.getMAL('Yuru Yuri')
+.then(res => console.log(res))
+.catch(err => console.log(err));
+// Trace.moe
+kyoko.getTrace('https://i.ibb.co/981SG4x/yuru-yuri.png')
+.then(res => console.log(res))
+.catch(err => console.log(err));
 ```
-## _Result_
-```
-{
-  url: [
-    'https://i.rei.my.id/ZV7J1WW.png',
-    'https://i.rei.my.id/Jngw47s.png',
-    'https://i.rei.my.id/MHrvoGY.jpg',
-    'https://i.rei.my.id/KfZyMS3.jpg',
-    'https://i.rei.my.id/xMRH74e.png'
-  ]
-}
-```
+
 ## _Endpoints_
 ```javascript
 getWaifu()
-getNsfw()
 getBlush()
 getBonk()
 getHug()
@@ -54,4 +58,29 @@ getSmile()
 getSmug()
 getWave()
 getWink()
+getAwoo()
+getBite()
+getBully()
+getCry()
+getCuddle()
+getDance()
+getGlomp()
+getHandhold()
+getHappy()
+getHighfive()
+getKick()
+getKill()
+getLick()
+getMAL()
+getTrace()
+getNom()
+getPat()
+getPoke()
+getNeko()
+getRandomAnime()
+getYeet()
+getNsfwWaifu()
+getNsfwTrap()
+getNsfwBlowjob()
+getNsfwNeko()
 ```
