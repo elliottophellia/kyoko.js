@@ -1,6 +1,6 @@
 {
   "name": "kyoko.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A javascript wrapper for KyokoAPI (kyoko.rei.my.id)",
   "main": "./src/index.js",
   "type": "module",
